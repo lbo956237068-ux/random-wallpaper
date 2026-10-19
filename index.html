@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>随机壁纸</title>
+<style>
+*{margin:0;padding:0}
+html,body{
+  width:100%;
+  height:100%;
+  background:#000;
+  overflow:hidden;
+}
+#wallpaper{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+</style>
+</head>
+<body>
+<img id="wallpaper" alt="随机壁纸">
+<script>
+// 文件名：图片1.png ~ 图片29.png
+const imgList = [
+"图片1.png",
+"图片2.png",
+"图片3.png",
+"图片4.png",
+"图片5.png",
+"图片6.png",
+"图片7.png",
+"图片8.png",
+"图片9.png",
+"图片10.png",
+"图片11.png",
+"图片12.png",
+"图片13.png",
+"图片14.png",
+"图片15.png",
+"图片16.png",
+"图片17.png",
+"图片18.png",
+"图片19.png",
+"图片20.png",
+"图片21.png",
+"图片22.png",
+"图片23.png",
+"图片24.png",
+"图片25.png",
+"图片26.png",
+"图片27.png",
+"图片28.png",
+"图片29.png"
+];
+// 随机选取一张图片
+const randomImg = imgList[Math.floor(Math.random() * imgList.length)];
+document.getElementById("wallpaper").src = randomImg;
+</script>
+</body>
+</html>
